@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Tracker</title>
+    <!-- tailwind css -->
+         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
 <body>
     <h1 class="text-3xl font-bold text-center mb-6">Job Application Dashboard</h1>
@@ -25,18 +28,370 @@
 
     </div>
 
-    <div class="flex justify-center gap-4 mb-6">
-        <button onclick="showTab('all')" class="px-4 py-2 bg-green-500 text-white rounded">All</button>
+    <div class=" justify-center gap-4 mb-6">
+        <div class="flex justify-between gap-4 mb-6">
+            <h2 class="text-lg font-semibold">Available Job</h2>
+            <p class="text-lg font-semibold">8 jobs</p>
+        </div>
+        <div>
+               <button onclick="showTab('all')" class="px-4 py-2 bg-green-500 text-white rounded">All</button>
 
         <button onclick="showTab('interview')" class="px-4 py-2 bg-green-500 text-white rounded">Interview</button>
 
         <button onclick="showTab('rejected')" class="px-4 py-2 bg-green-500 text-white rounded">Rejected</button>
+        </div>
     </div>
 
 
-    <div id="jobContainer"  class="grid md:grid-cols-3 gap-6">
+    <div id="jobContainer"  class="grid grid-cols-1 justify-start gap-6">
 
+    <div class="max-w-3xl  bg-white p-5 sm:p-6 rounded-xl ">
+
+  <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3">
+    
+    <div>
+      <h2 class="text-lg sm:text-xl font-semibold text-blue-600">
+        WebFlow Agency
+      </h2>
+      <p class="text-gray-500 text-sm">
+        Web Designer & Developer
+      </p>
     </div>
+
+    <button class="self-start sm:self-auto text-gray-400 hover:text-gray-600 text-lg">
+      🗑️
+    </button>
+
+  </div>
+
+  <p class="text-gray-500 text-sm mt-2">
+    Los Angeles, CA • Part-time • $80,000 - $120,000
+  </p>
+  <span class="inline-block mt-3 text-xs font-medium bg-blue-100 text-blue-700 px-3 py-1 rounded">
+    NOT APPLIED
+  </span>
+
+  <p class="text-gray-600 text-sm mt-3">
+    Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.
+  </p>
+
+  <div class="flex flex-col sm:flex-row gap-3 mt-4">
+
+    <button class="w-full sm:w-auto border border-green-500 text-green-600 px-4 py-2 rounded hover:bg-green-50">
+      INTERVIEW
+    </button>
+
+    <button class="w-full sm:w-auto border border-red-500 text-red-600 px-4 py-2 rounded hover:bg-red-50">
+      REJECTED
+    </button>
+
+  </div>
+
+</div>
+    <div class="max-w-3xl bg-white p-5 sm:p-6 rounded-xl ">
+
+  <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3">
+    
+    <div>
+      <h2 class="text-lg sm:text-xl font-semibold text-blue-600">
+        WebFlow Agency
+      </h2>
+      <p class="text-gray-500 text-sm">
+        Web Designer & Developer
+      </p>
+    </div>
+
+    <button class="self-start sm:self-auto text-gray-400 hover:text-gray-600 text-lg">
+      🗑️
+    </button>
+
+  </div>
+
+  <p class="text-gray-500 text-sm mt-2">
+    Los Angeles, CA • Part-time • $80,000 - $120,000
+  </p>
+  <span class="inline-block mt-3 text-xs font-medium bg-blue-100 text-blue-700 px-3 py-1 rounded">
+    NOT APPLIED
+  </span>
+
+  <p class="text-gray-600 text-sm mt-3">
+    Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.
+  </p>
+
+  <div class="flex flex-col sm:flex-row gap-3 mt-4">
+
+    <button class="w-full sm:w-auto border border-green-500 text-green-600 px-4 py-2 rounded hover:bg-green-50">
+      INTERVIEW
+    </button>
+
+    <button class="w-full sm:w-auto border border-red-500 text-red-600 px-4 py-2 rounded hover:bg-red-50">
+      REJECTED
+    </button>
+
+  </div>
+
+</div>
+    <div class="max-w-3xl bg-white p-5 sm:p-6 rounded-xl">
+
+  <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3">
+    
+    <div>
+      <h2 class="text-lg sm:text-xl font-semibold text-blue-600">
+        WebFlow Agency
+      </h2>
+      <p class="text-gray-500 text-sm">
+        Web Designer & Developer
+      </p>
+    </div>
+
+    <button class="self-start sm:self-auto text-gray-400 hover:text-gray-600 text-lg">
+      🗑️
+    </button>
+
+  </div>
+
+  <p class="text-gray-500 text-sm mt-2">
+    Los Angeles, CA • Part-time • $80,000 - $120,000
+  </p>
+  <span class="inline-block mt-3 text-xs font-medium bg-blue-100 text-blue-700 px-3 py-1 rounded">
+    NOT APPLIED
+  </span>
+
+  <p class="text-gray-600 text-sm mt-3">
+    Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.
+  </p>
+
+  <div class="flex flex-col sm:flex-row gap-3 mt-4">
+
+    <button class="w-full sm:w-auto border border-green-500 text-green-600 px-4 py-2 rounded hover:bg-green-50">
+      INTERVIEW
+    </button>
+
+    <button class="w-full sm:w-auto border border-red-500 text-red-600 px-4 py-2 rounded hover:bg-red-50">
+      REJECTED
+    </button>
+
+  </div>
+
+</div>
+    <div class="max-w-3xl bg-white p-5 sm:p-6 rounded-xl">
+
+  <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3">
+    
+    <div>
+      <h2 class="text-lg sm:text-xl font-semibold text-blue-600">
+        WebFlow Agency
+      </h2>
+      <p class="text-gray-500 text-sm">
+        Web Designer & Developer
+      </p>
+    </div>
+
+    <button class="self-start sm:self-auto text-gray-400 hover:text-gray-600 text-lg">
+      🗑️
+    </button>
+
+  </div>
+
+  <p class="text-gray-500 text-sm mt-2">
+    Los Angeles, CA • Part-time • $80,000 - $120,000
+  </p>
+  <span class="inline-block mt-3 text-xs font-medium bg-blue-100 text-blue-700 px-3 py-1 rounded">
+    NOT APPLIED
+  </span>
+
+  <p class="text-gray-600 text-sm mt-3">
+    Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.
+  </p>
+
+  <div class="flex flex-col sm:flex-row gap-3 mt-4">
+
+    <button class="w-full sm:w-auto border border-green-500 text-green-600 px-4 py-2 rounded hover:bg-green-50">
+      INTERVIEW
+    </button>
+
+    <button class="w-full sm:w-auto border border-red-500 text-red-600 px-4 py-2 rounded hover:bg-red-50">
+      REJECTED
+    </button>
+
+  </div>
+
+</div>
+    <div class="max-w-3xl bg-white p-5 sm:p-6 rounded-xl ">
+
+  <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3">
+    
+    <div>
+      <h2 class="text-lg sm:text-xl font-semibold text-blue-600">
+        WebFlow Agency
+      </h2>
+      <p class="text-gray-500 text-sm">
+        Web Designer & Developer
+      </p>
+    </div>
+
+    <button class="self-start sm:self-auto text-gray-400 hover:text-gray-600 text-lg">
+      🗑️
+    </button>
+
+  </div>
+
+  <p class="text-gray-500 text-sm mt-2">
+    Los Angeles, CA • Part-time • $80,000 - $120,000
+  </p>
+  <span class="inline-block mt-3 text-xs font-medium bg-blue-100 text-blue-700 px-3 py-1 rounded">
+    NOT APPLIED
+  </span>
+
+  <p class="text-gray-600 text-sm mt-3">
+    Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.
+  </p>
+
+  <div class="flex flex-col sm:flex-row gap-3 mt-4">
+
+    <button class="w-full sm:w-auto border border-green-500 text-green-600 px-4 py-2 rounded hover:bg-green-50">
+      INTERVIEW
+    </button>
+
+    <button class="w-full sm:w-auto border border-red-500 text-red-600 px-4 py-2 rounded hover:bg-red-50">
+      REJECTED
+    </button>
+
+  </div>
+
+</div>
+    <div class="max-w-3xl bg-white p-5 sm:p-6 rounded-xl">
+
+  <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3">
+    
+    <div>
+      <h2 class="text-lg sm:text-xl font-semibold text-blue-600">
+        WebFlow Agency
+      </h2>
+      <p class="text-gray-500 text-sm">
+        Web Designer & Developer
+      </p>
+    </div>
+
+    <button class="self-start sm:self-auto text-gray-400 hover:text-gray-600 text-lg">
+      🗑️
+    </button>
+
+  </div>
+
+  <p class="text-gray-500 text-sm mt-2">
+    Los Angeles, CA • Part-time • $80,000 - $120,000
+  </p>
+  <span class="inline-block mt-3 text-xs font-medium bg-blue-100 text-blue-700 px-3 py-1 rounded">
+    NOT APPLIED
+  </span>
+
+  <p class="text-gray-600 text-sm mt-3">
+    Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.
+  </p>
+
+  <div class="flex flex-col sm:flex-row gap-3 mt-4">
+
+    <button class="w-full sm:w-auto border border-green-500 text-green-600 px-4 py-2 rounded hover:bg-green-50">
+      INTERVIEW
+    </button>
+
+    <button class="w-full sm:w-auto border border-red-500 text-red-600 px-4 py-2 rounded hover:bg-red-50">
+      REJECTED
+    </button>
+
+  </div>
+
+</div>
+    <div class="max-w-3xl bg-white p-5 sm:p-6 rounded-xl">
+
+  <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3">
+    
+    <div>
+      <h2 class="text-lg sm:text-xl font-semibold text-blue-600">
+        WebFlow Agency
+      </h2>
+      <p class="text-gray-500 text-sm">
+        Web Designer & Developer
+      </p>
+    </div>
+
+    <button class="self-start sm:self-auto text-gray-400 hover:text-gray-600 text-lg">
+      🗑️
+    </button>
+
+  </div>
+
+  <p class="text-gray-500 text-sm mt-2">
+    Los Angeles, CA • Part-time • $80,000 - $120,000
+  </p>
+  <span class="inline-block mt-3 text-xs font-medium bg-blue-100 text-blue-700 px-3 py-1 rounded">
+    NOT APPLIED
+  </span>
+
+  <p class="text-gray-600 text-sm mt-3">
+    Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.
+  </p>
+
+  <div class="flex flex-col sm:flex-row gap-3 mt-4">
+
+    <button class="w-full sm:w-auto border border-green-500 text-green-600 px-4 py-2 rounded hover:bg-green-50">
+      INTERVIEW
+    </button>
+
+    <button class="w-full sm:w-auto border border-red-500 text-red-600 px-4 py-2 rounded hover:bg-red-50">
+      REJECTED
+    </button>
+
+  </div>
+
+</div>
+    <div class="max-w-3xl bg-white p-5 sm:p-6 rounded-xl">
+
+  <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3">
+    
+    <div>
+      <h2 class="text-lg sm:text-xl font-semibold text-blue-600">
+        WebFlow Agency
+      </h2>
+      <p class="text-gray-500 text-sm">
+        Web Designer & Developer
+      </p>
+    </div>
+
+    <button class="self-start sm:self-auto text-gray-400 hover:text-gray-600 text-lg">
+      🗑️
+    </button>
+
+  </div>
+
+  <p class="text-gray-500 text-sm mt-2">
+    Los Angeles, CA • Part-time • $80,000 - $120,000
+  </p>
+  <span class="inline-block mt-3 text-xs font-medium bg-blue-100 text-blue-700 px-3 py-1 rounded">
+    NOT APPLIED
+  </span>
+
+  <p class="text-gray-600 text-sm mt-3">
+    Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.
+  </p>
+
+  <div class="flex flex-col sm:flex-row gap-3 mt-4">
+
+    <button class="w-full sm:w-auto border border-green-500 text-green-600 px-4 py-2 rounded hover:bg-green-50">
+      INTERVIEW
+    </button>
+
+    <button class="w-full sm:w-auto border border-red-500 text-red-600 px-4 py-2 rounded hover:bg-red-50">
+      REJECTED
+    </button>
+
+  </div>
+
+</div>
+    </div>
+
+    
 
 
 

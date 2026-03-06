@@ -19,11 +19,11 @@
         </div>
         <div class="bg-white p-6 rounded-xl shadow text-center">
             <h2 class="text-lg font-semibold">Interview</h2>
-            <p class="text-2xl font-bold ">0</p>
+            <p class="text-2xl font-bold text-green-600">0</p>
         </div>
         <div class="bg-white p-6 rounded-xl shadow text-center">
             <h2 class="text-lg font-semibold">Rejected</h2>
-            <p class="text-2xl font-bold ">0</p>
+            <p class="text-2xl font-bold text-red-600">0</p>
         </div>
 
     </div>
@@ -31,14 +31,14 @@
     <div class=" justify-center gap-4 mb-6">
         <div class="flex justify-between gap-4 mb-6">
             <h2 class="text-lg font-semibold">Available Job</h2>
-            <p class="text-lg font-semibold">8 jobs</p>
+            <p id="jobCount" class="text-lg font-semibold">8 jobs</p>
         </div>
         <div>
-               <button onclick="showTab('all')" class="px-4 py-2 bg-green-500 text-white rounded">All</button>
+               <button onclick="showTab('all')" class="tabBtn px-4 py-2  text-black rounded border">All</button>
 
-        <button onclick="showTab('interview')" class="px-4 py-2 bg-green-500 text-white rounded">Interview</button>
+        <button onclick="showTab('interview')" class="tabBtn px-4 py-2 border text-black rounded">Interview</button>
 
-        <button onclick="showTab('rejected')" class="px-4 py-2 bg-green-500 text-white rounded">Rejected</button>
+        <button onclick="showTab('rejected')" class="tabBtn px-4 py-2 border text-black rounded">Rejected</button>
         </div>
     </div>
 
@@ -51,23 +51,23 @@
     
     <div>
       <h2 class="text-lg sm:text-xl font-semibold text-blue-600">
-        WebFlow Agency
+        Mobile First Corp
       </h2>
       <p class="text-gray-500 text-sm">
-        Web Designer & Developer
+       React Native Developer
       </p>
     </div>
 
-    <button class="self-start sm:self-auto text-gray-400 hover:text-gray-600 text-lg">
+    <button class="deleteBtn self-start sm:self-auto text-gray-400 hover:text-gray-600 text-lg">
       <span><img src="./assets/Trash.png" alt=""></span>
     </button>
 
   </div>
 
   <p class="text-gray-500 text-sm mt-2">
-    Los Angeles, CA • Part-time • $80,000 - $120,000
+    Remote • Full-time • $130,000 - $175,000
   </p>
-  <span class="inline-block mt-3 text-xs font-medium bg-blue-100 text-blue-700 px-3 py-1 rounded">
+  <span class="statusText inline-block mt-3 text-xs font-medium bg-blue-100 text-blue-700 px-3 py-1 rounded">
     NOT APPLIED
   </span>
 
@@ -77,11 +77,11 @@
 
   <div class="flex flex-col sm:flex-row gap-3 mt-4">
 
-    <button class="w-full sm:w-auto border border-green-500 text-green-600 px-4 py-2 rounded hover:bg-green-50">
+    <button class="interviewBtn w-full sm:w-auto border border-green-500 text-green-600 px-4 py-2 rounded hover:bg-green-50">
       INTERVIEW
     </button>
 
-    <button class="w-full sm:w-auto border border-red-500 text-red-600 px-4 py-2 rounded hover:bg-red-50">
+    <button class="rejectedBtn w-full sm:w-auto border border-red-500 text-red-600 px-4 py-2 rounded hover:bg-red-50">
       REJECTED
     </button>
 
@@ -101,16 +101,16 @@
       </p>
     </div>
 
-    <button class="self-start sm:self-auto text-gray-400 hover:text-gray-600 text-lg">
+    <button class="deleteBtn self-start sm:self-auto text-gray-400 hover:text-gray-600 text-lg">
       <span><img src="./assets/Trash.png" alt=""></span>
     </button>
 
   </div>
 
   <p class="text-gray-500 text-sm mt-2">
-    Los Angeles, CA • Part-time • $80,000 - $120,000
+    Boston, MA • Full-time • $125,000 - $165,000
   </p>
-  <span class="inline-block mt-3 text-xs font-medium bg-blue-100 text-blue-700 px-3 py-1 rounded">
+  <span class="statusText inline-block mt-3 text-xs font-medium bg-blue-100 text-blue-700 px-3 py-1 rounded">
     NOT APPLIED
   </span>
 
@@ -120,11 +120,11 @@
 
   <div class="flex flex-col sm:flex-row gap-3 mt-4">
 
-    <button class="w-full sm:w-auto border border-green-500 text-green-600 px-4 py-2 rounded hover:bg-green-50">
+    <button class="interviewBtn w-full sm:w-auto border border-green-500 text-green-600 px-4 py-2 rounded hover:bg-green-50">
       INTERVIEW
     </button>
 
-    <button class="w-full sm:w-auto border border-red-500 text-red-600 px-4 py-2 rounded hover:bg-red-50">
+    <button class="rejectedBtn w-full sm:w-auto  border border-red-500 text-red-600 px-4 py-2 rounded hover:bg-red-50">
       REJECTED
     </button>
 
@@ -137,37 +137,37 @@
     
     <div>
       <h2 class="text-lg sm:text-xl font-semibold text-blue-600">
-        WebFlow Agency
+       DataViz Solutions
       </h2>
       <p class="text-gray-500 text-sm">
-        Web Designer & Developer
+        JavaScript Developer
       </p>
     </div>
 
-    <button class="self-start sm:self-auto text-gray-400 hover:text-gray-600 text-lg">
+    <button class="deleteBtn self-start sm:self-auto text-gray-400 hover:text-gray-600 text-lg">
       <span><img src="./assets/Trash.png" alt=""></span>
     </button>
 
   </div>
 
   <p class="text-gray-500 text-sm mt-2">
-    Los Angeles, CA • Part-time • $80,000 - $120,000
+    New York, NY • Full-time • $130,000 - $170,00
   </p>
-  <span class="inline-block mt-3 text-xs font-medium bg-blue-100 text-blue-700 px-3 py-1 rounded">
+  <span class="statusText inline-block mt-3 text-xs font-medium bg-blue-100 text-blue-700 px-3 py-1 rounded">
     NOT APPLIED
   </span>
 
   <p class="text-gray-600 text-sm mt-3">
-    Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.
+    Build enterprise applications with JavaScript and modern frameworks. We offer competitive compensation, health insurance, and professional development opportunities.
   </p>
 
   <div class="flex flex-col sm:flex-row gap-3 mt-4">
 
-    <button class="w-full sm:w-auto border border-green-500 text-green-600 px-4 py-2 rounded hover:bg-green-50">
+    <button class="interviewBtn w-full sm:w-auto border border-green-500 text-green-600 px-4 py-2 rounded hover:bg-green-50">
       INTERVIEW
     </button>
 
-    <button class="w-full sm:w-auto border border-red-500 text-red-600 px-4 py-2 rounded hover:bg-red-50">
+    <button class="rejectedBtn w-full sm:w-auto border border-red-500 text-red-600 px-4 py-2 rounded hover:bg-red-50">
       REJECTED
     </button>
 
@@ -180,37 +180,37 @@
     
     <div>
       <h2 class="text-lg sm:text-xl font-semibold text-blue-600">
-        WebFlow Agency
+       TechCorp Industries
       </h2>
       <p class="text-gray-500 text-sm">
-        Web Designer & Developer
+        Senior Frontend Developer
       </p>
     </div>
 
-    <button class="self-start sm:self-auto text-gray-400 hover:text-gray-600 text-lg">
+    <button class="deleteBtn self-start sm:self-auto text-gray-400 hover:text-gray-600 text-lg">
       <span><img src="./assets/Trash.png" alt=""></span>
     </button>
 
   </div>
 
   <p class="text-gray-500 text-sm mt-2">
-    Los Angeles, CA • Part-time • $80,000 - $120,000
+    San Francisco, CA • Full-time • $130,000 - $175,000
   </p>
-  <span class="inline-block mt-3 text-xs font-medium bg-blue-100 text-blue-700 px-3 py-1 rounded">
+  <span class="statusText inline-block mt-3 text-xs font-medium bg-blue-100 text-blue-700 px-3 py-1 rounded">
     NOT APPLIED
   </span>
 
   <p class="text-gray-600 text-sm mt-3">
-    Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.
+    We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.
   </p>
 
   <div class="flex flex-col sm:flex-row gap-3 mt-4">
 
-    <button class="w-full sm:w-auto border border-green-500 text-green-600 px-4 py-2 rounded hover:bg-green-50">
+    <button class="interviewBtn w-full sm:w-auto border border-green-500 text-green-600 px-4 py-2 rounded hover:bg-green-50">
       INTERVIEW
     </button>
 
-    <button class="w-full sm:w-auto border border-red-500 text-red-600 px-4 py-2 rounded hover:bg-red-50">
+    <button class="rejectedBtn w-full sm:w-auto border border-red-500 text-red-600 px-4 py-2 rounded hover:bg-red-50">
       REJECTED
     </button>
 
@@ -223,37 +223,37 @@
     
     <div>
       <h2 class="text-lg sm:text-xl font-semibold text-blue-600">
-        WebFlow Agency
+        Innovation Labs
       </h2>
       <p class="text-gray-500 text-sm">
-        Web Designer & Developer
+        UI/UX Engineer
       </p>
     </div>
 
-    <button class="self-start sm:self-auto text-gray-400 hover:text-gray-600 text-lg">
+    <button class="deleteBtn self-start sm:self-auto text-gray-400 hover:text-gray-600 text-lg">
       <span><img src="./assets/Trash.png" alt=""></span>
     </button>
 
   </div>
 
   <p class="text-gray-500 text-sm mt-2">
-    Los Angeles, CA • Part-time • $80,000 - $120,000
+    Austin, TX • Full-time • $110,000 - $150,000
   </p>
-  <span class="inline-block mt-3 text-xs font-medium bg-blue-100 text-blue-700 px-3 py-1 rounded">
+  <span class="statusText inline-block mt-3 text-xs font-medium bg-blue-100 text-blue-700 px-3 py-1 rounded">
     NOT APPLIED
   </span>
 
   <p class="text-gray-600 text-sm mt-3">
-    Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.
+    Create beautiful and functional user interfaces for our suite of products. Strong design skills and frontend development expertise required.
   </p>
 
   <div class="flex flex-col sm:flex-row gap-3 mt-4">
 
-    <button class="w-full sm:w-auto border border-green-500 text-green-600 px-4 py-2 rounded hover:bg-green-50">
+    <button class="interviewBtn w-full sm:w-auto border border-green-500 text-green-600 px-4 py-2 rounded hover:bg-green-50">
       INTERVIEW
     </button>
 
-    <button class="w-full sm:w-auto border border-red-500 text-red-600 px-4 py-2 rounded hover:bg-red-50">
+    <button class="rejectedBtn w-full sm:w-auto border border-red-500 text-red-600 px-4 py-2 rounded hover:bg-red-50">
       REJECTED
     </button>
 
@@ -266,37 +266,37 @@
     
     <div>
       <h2 class="text-lg sm:text-xl font-semibold text-blue-600">
-        WebFlow Agency
+        MegaCorp Solutions
       </h2>
       <p class="text-gray-500 text-sm">
-        Web Designer & Developer
+        JavaScript Developer
       </p>
     </div>
 
-    <button class="self-start sm:self-auto text-gray-400 hover:text-gray-600 text-lg">
+    <button class="deleteBtn self-start sm:self-auto text-gray-400 hover:text-gray-600 text-lg">
       <span><img src="./assets/Trash.png" alt=""></span>
     </button>
 
   </div>
 
   <p class="text-gray-500 text-sm mt-2">
-    Los Angeles, CA • Part-time • $80,000 - $120,000
+   New York, NY • Full-time • $130,000 - $170,00
   </p>
-  <span class="inline-block mt-3 text-xs font-medium bg-blue-100 text-blue-700 px-3 py-1 rounded">
+  <span class="statusText inline-block mt-3 text-xs font-medium bg-blue-100 text-blue-700 px-3 py-1 rounded">
     NOT APPLIED
   </span>
 
   <p class="text-gray-600 text-sm mt-3">
-    Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.
+    Build enterprise applications with JavaScript and modern frameworks. We offer competitive compensation, health insurance, and professional development opportunities.
   </p>
 
   <div class="flex flex-col sm:flex-row gap-3 mt-4">
 
-    <button class="w-full sm:w-auto border border-green-500 text-green-600 px-4 py-2 rounded hover:bg-green-50">
+    <button class="interviewBtn w-full sm:w-auto border border-green-500 text-green-600 px-4 py-2 rounded hover:bg-green-50">
       INTERVIEW
     </button>
 
-    <button class="w-full sm:w-auto border border-red-500 text-red-600 px-4 py-2 rounded hover:bg-red-50">
+    <button class="rejectedBtn w-full sm:w-auto border border-red-500 text-red-600 px-4 py-2 rounded hover:bg-red-50">
       REJECTED
     </button>
 
@@ -309,37 +309,37 @@
     
     <div>
       <h2 class="text-lg sm:text-xl font-semibold text-blue-600">
-        WebFlow Agency
+       TechCorp Industries
       </h2>
       <p class="text-gray-500 text-sm">
-        Web Designer & Developer
+       Senior Frontend Developer
       </p>
     </div>
 
-    <button class="self-start sm:self-auto text-gray-400 hover:text-gray-600 text-lg">
+    <button class="deleteBtn self-start sm:self-auto text-gray-400 hover:text-gray-600 text-lg">
       <span><img src="./assets/Trash.png" alt=""></span>
     </button>
 
   </div>
 
   <p class="text-gray-500 text-sm mt-2">
-    Los Angeles, CA • Part-time • $80,000 - $120,000
+    San Francisco, CA • Full-time • $130,000 - $175,000
   </p>
-  <span class="inline-block mt-3 text-xs font-medium bg-blue-100 text-blue-700 px-3 py-1 rounded">
+  <span class="statusText inline-block mt-3 text-xs font-medium bg-blue-100 text-blue-700 px-3 py-1 rounded">
     NOT APPLIED
   </span>
 
   <p class="text-gray-600 text-sm mt-3">
-    Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.
+    We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.
   </p>
 
   <div class="flex flex-col sm:flex-row gap-3 mt-4">
 
-    <button class="w-full sm:w-auto border border-green-500 text-green-600 px-4 py-2 rounded hover:bg-green-50">
+    <button class="interviewBtn w-full sm:w-auto border border-green-500 text-green-600 px-4 py-2 rounded hover:bg-green-50">
       INTERVIEW
     </button>
 
-    <button class="w-full sm:w-auto border border-red-500 text-red-600 px-4 py-2 rounded hover:bg-red-50">
+    <button class="rejectedBtn w-full sm:w-auto border border-red-500 text-red-600 px-4 py-2 rounded hover:bg-red-50">
       REJECTED
     </button>
 
@@ -352,43 +352,49 @@
     
     <div>
       <h2 class="text-lg sm:text-xl font-semibold text-blue-600">
-        WebFlow Agency
+        StartupXYZ
       </h2>
       <p class="text-gray-500 text-sm">
-        Web Designer & Developer
+        Full Stack Engineer
       </p>
     </div>
 
-    <button class="self-start sm:self-auto text-gray-400 hover:text-gray-600 text-lg">
+    <button class="deleteBtn self-start sm:self-auto text-gray-400 hover:text-gray-600 text-lg">
       <span><img src="./assets/Trash.png" alt=""></span>
     </button>
 
   </div>
 
   <p class="text-gray-500 text-sm mt-2">
-    Los Angeles, CA • Part-time • $80,000 - $120,000
+    Remote • Full-time • $120,000 - $160,000
   </p>
-  <span class="inline-block mt-3 text-xs font-medium bg-blue-100 text-blue-700 px-3 py-1 rounded">
+  <span class="statusText inline-block mt-3 text-xs font-medium bg-blue-100 text-blue-700 px-3 py-1 rounded">
     NOT APPLIED
   </span>
 
   <p class="text-gray-600 text-sm mt-3">
-    Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.
+    Join our fast-growing startup and work on our core platform. Experience with Node.js and React required. Great benefits and equity package included.
   </p>
 
   <div class="flex flex-col sm:flex-row gap-3 mt-4">
 
-    <button class="w-full sm:w-auto border border-green-500 text-green-600 px-4 py-2 rounded hover:bg-green-50">
+    <button class="interviewBtn w-full sm:w-auto border border-green-500 text-green-600 px-4 py-2 rounded hover:bg-green-50">
       INTERVIEW
     </button>
 
-    <button class="w-full sm:w-auto border border-red-500 text-red-600 px-4 py-2 rounded hover:bg-red-50">
+    <button class="rejectedBtn w-full sm:w-auto border border-red-500 text-red-600 px-4 py-2 rounded hover:bg-red-50">
       REJECTED
     </button>
 
   </div>
 
 </div>
+    </div>
+
+    <div id="emptyState" class="hidden text-center mt-10">
+      <img class="mx-auto" src="./jobs.png" alt="">
+      <h3 class="font-bold">No jobs available</h3>
+      <p>check back soon for new job opportunities</p>
     </div>
 
     
